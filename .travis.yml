@@ -12,5 +12,6 @@ deploy:
   app: "simulator-backend"
   env: "SimulatorBackend-env "
   bucket_name: "elasticbeanstalk-eu-north-1-378672856045"
+  skip_cleanup: true
   on:
     branch: production
