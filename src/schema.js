@@ -3,7 +3,7 @@ const { gql } = require('apollo-server');
 const typeDefs = gql`
 type Query {
     electricityPrice: Float!
-    house(id: Int!): House
+    house(id: String!): House
   }  
 
   type House {
