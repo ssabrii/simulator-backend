@@ -59,4 +59,7 @@ typings/
 
 # next.js build output
 .next
+<<<<<<< HEAD
 ./src/config.js
+=======
+>>>>>>> 9f94de6048d400a2cec6bd7610311b1627ea0c16
