@@ -1,0 +1,31 @@
+{
+  "name": "simulator-backend",
+  "version": "1.0.0",
+  "description": "Wind speed and electricity price and demand simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Green-Lean-Electrics/simulator-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Green-Lean-Electrics/simulator-backend/issues"
+  },
+  "homepage": "https://github.com/Green-Lean-Electrics/simulator-backend#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.8",
+    "apollo-server-express": "^2.9.9",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "mongoose": "^5.7.11",
+    "node-kmeans": "^1.1.9",
+    "stochastic": "0.0.14"
+  }
+}
