@@ -13,7 +13,11 @@ const userSchema = new Schema({
 });
 
 const householdSchema = new Schema({
-  _id: mongoose.Schema.Types.ObjectId,
+  _id: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    auto: true,
+  },
   coords: {
     x: Number,
     y: Number
@@ -27,6 +31,11 @@ const householdSchema = new Schema({
     default: Date.now
   },
   picture: String,
+  weatherData: {
+    lastRetrieved: Date,
+    temperature: Number,
+    timezone: String
+  },
   owner: { type: Schema.Types.ObjectId, ref: 'user' }
 
 });
@@ -37,4 +46,4 @@ const User = mongoose.model('user', userSchema);
 module.exports = {
   Household,
   User
-};
+}

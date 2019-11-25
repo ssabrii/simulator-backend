@@ -26,6 +26,9 @@
     "graphql": "^14.5.8",
     "mongoose": "^5.7.11",
     "node-kmeans": "^1.1.9",
+    "oauth": "^0.9.15",
+    "polynomial": "^1.4.3",
+    "random-number": "0.0.9",
     "stochastic": "0.0.14"
   }
 }
