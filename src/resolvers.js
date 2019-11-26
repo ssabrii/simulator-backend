@@ -1,4 +1,5 @@
 const wind = require('./windSpeed')
+const price = require('./electrictyPrice')
 
 const resolvers = {
     Query: {
@@ -10,8 +11,9 @@ const resolvers = {
             }
         },
         electricityPrice: () => {
-            return (Math.random() * (10.0 - 2.0) + 2.0).toFixed(2)
-            
+            //electrictyPrice
+            // electrictyPrice: price.getPrice
+            return  price.getElectricityPrice()
         }
     },
 };
